@@ -17,9 +17,9 @@ const Header = () => {
   };
 
   return (
-    <header className={cn("fixed top-7 inset-x-0 z-50 flex flex-none flex-col mx-4 lg:mx-16")}>
-        <div className="w-full mx-auto max-w-7xl lg:px-8">
-            <div className="relative sm:px-8 lg:px-12 mx-auto max-w-2xl lg:max-w-5xl">
+    <header className={cn("fixed top-7 inset-x-0 z-50 flex flex-none flex-col mx-auto")}>
+        <div className="w-full">
+            <div className="relative sm:px-8 container mx-auto">
                 <div className="relative flex gap-4 items-center justify-between"> 
                     <Link href="/" className="flex items-center pointer-events-auto">
                         <div className="h-10 w-10 rounded-full bg-white/90 p-0.5 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:ring-white/10">

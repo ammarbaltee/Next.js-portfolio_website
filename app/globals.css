@@ -10,6 +10,7 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+ 
 }
 
 @layer base {
@@ -21,7 +22,9 @@ body {
       --card-foreground: 240 10% 3.9%;
       --popover: 0 0% 100%;
       --popover-foreground: 240 10% 3.9%;
-      --primary: 142.1 76.2% 36.3%;
+      --primary: 180 60% 40%;
+      --primary-gradient: linear-gradient(to right, hsl(45, 100%, 50%), hsl(24, 100%, 50%), hsl(54, 100%, 50%));
+      --primary-gradient-radial: radial-gradient(circle, hsl(45, 100%, 50%) 0%, hsl(24, 100%, 50%) 50%, hsl(54, 100%, 50%) 100%);
       --primary-foreground: 355.7 100% 97.3%;
       --secondary: 240 4.8% 95.9%;
       --secondary-foreground: 240 5.9% 10%;
@@ -49,7 +52,7 @@ body {
       --card-foreground: 0 0% 95%;
       --popover: 0 0% 9%;
       --popover-foreground: 0 0% 95%;
-      --primary: 142.1 70.6% 45.3%;
+      --primary: 180 60% 40%;
       --primary-foreground: 144.9 80.4% 10%;
       --secondary: 240 3.7% 15.9%;
       --secondary-foreground: 0 0% 98%;
@@ -78,6 +81,7 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+  
 }
 
 .head_text {
@@ -118,3 +122,4 @@ body {
 .badge {
   @apply z-10 w-[200px] h-[68px] bg-white dark:backdrop:backdrop-blur-[44px] shadow-2xl p-4 rounded-[10px] flex items-center gap-x-4;
 }
+

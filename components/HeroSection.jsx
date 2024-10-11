@@ -14,7 +14,7 @@ const HeroSection = () => {
         <div className="p-4 relative z-10 w-full text-center">
             <h1 className="head_text text-center dark:text-white">Innovative Frontend Solutions
             <br className="max-md:hidden" />
-            <span className="orange_gradient text-center dark:#A1A1AA"> for Modern Web </span>
+            <span className="text-primary text-center dark:#A1A1AA"> for Modern Web </span>
             </h1>
             <div className="max-w-2xl mx-auto text-center"> 
                 <p className="desc">
