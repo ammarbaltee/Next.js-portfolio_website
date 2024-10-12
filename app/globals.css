@@ -28,6 +28,7 @@ body {
       --primary-foreground: 355.7 100% 97.3%;
       --secondary: 240 4.8% 95.9%;
       --secondary-foreground: 240 5.9% 10%;
+      --tertiary: 27% 82% 98%;
       --muted: 240 4.8% 95.9%;
       --muted-foreground: 240 3.8% 46.1%;
       --accent: 240 4.8% 95.9%;
@@ -37,7 +38,7 @@ body {
       --border: 240 5.9% 90%;
       --input: 240 5.9% 90%;
       --ring: 142.1 76.2% 36.3%;
-      --radius: 0.3rem;
+      --radius: 0.9375rem; /* 15px in rem */
       --chart-1: 12 76% 61%;
       --chart-2: 173 58% 39%;
       --chart-3: 197 37% 24%;
@@ -109,7 +110,7 @@ body {
 }
 
 .h4 {
-  @apply text-[2px] font-semibold;
+  @apply text-[22px] font-semibold;
 }
 .subtitle {
   @apply text-muted-foreground text-lg mb-8 font-light
@@ -123,3 +124,8 @@ body {
   @apply z-10 w-[200px] h-[68px] bg-white dark:backdrop:backdrop-blur-[44px] shadow-2xl p-4 rounded-[10px] flex items-center gap-x-4;
 }
 
+/* swiper bullets stle */
+.swiper-horizontal > .section-pagination-bullets .swiper-pagination-bullet, 
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet { 
+  @apply bg-primary;
+}

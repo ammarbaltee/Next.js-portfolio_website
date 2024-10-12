@@ -43,6 +43,9 @@ module.exports = {
           DEFAULT: 'hsl(var(--secondary))',
           foreground: 'hsl(var(--secondary-foreground))',
         },
+        secondary: {
+          DEFAULT: 'hsl(var(--tertiary))',
+        },
         muted: {
           DEFAULT: 'hsl(var(--muted))',
           foreground: 'hsl(var(--muted-foreground))',
@@ -83,7 +86,8 @@ module.exports = {
         about_shape_dark: 'url(/about/shape-dark.svg)',
         dots_light: 'url(/dots-light.svg)',
         dots_dark: 'url(/dots-dark.svg)',
-
+        work_project_bg_light: 'url(/work/project-bg-light.png)',
+        work_project_bg_dark: 'url(/work/project-bg-dark.png)',
       },
       keyframes: {
         spotlight: {
