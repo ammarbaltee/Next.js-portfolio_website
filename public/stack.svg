@@ -1,0 +1,10 @@
+<svg width="64px" height="64px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <!-- Top Layer -->
+  <polygon points="32,10 10,24 32,38 54,24" fill="#FFFFFF" />
+  
+  <!-- Middle Layer -->
+  <polygon points="32,22 10,36 32,50 54,36" fill="#FFFFFF" />
+  
+  <!-- Bottom Layer -->
+  <polygon points="32,34 10,48 32,62 54,48" fill="#FFFFFF" />
+</svg>

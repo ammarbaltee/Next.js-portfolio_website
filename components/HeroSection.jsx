@@ -6,12 +6,12 @@ import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const HeroSection = () => {
   return (
-    <div className="h-auto md:h-[40rem] w-full rounded-md flex flex-col items-center justify-center relative overflow-hidden mx-auto py-10 md:py-0">
+    <div className="h-auto md:h-[40rem] w-full rounded-md flex flex-col items-center justify-center relative overflow-hidden mx-auto py-20 md:py-0">
         <Spotlight
         className="-top-40 left-0 md:left-60 md:-top-20"
         fill="white"
         />
-        <div className="p-4 relative z-10 w-full text-center">
+        <div className="p-4 md:pt-20 relative z-10 w-full text-center">
             <h1 className="head_text text-center dark:text-white">Innovative Frontend Solutions
             <br className="max-md:hidden" />
             <span className="text-primary text-center dark:#A1A1AA"> for Modern Web </span>
