@@ -1,3 +1,4 @@
+'use client'
 import DevImg from "./DevImg";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { 
@@ -11,6 +12,7 @@ import {
     Section
 } from "lucide-react";
 import Image from "next/image";
+import useWindowSize from '../hooks/useWindowSize';
 
 const InfoData = [
     {
@@ -95,6 +97,7 @@ const SkillsData = [
 ];
 
 const About = () => {
+    const { width } = useWindowSize();
     const getData = (arr,title) => {
         return arr.find((item) => item.title === title);
     };
@@ -242,7 +245,7 @@ const About = () => {
                                             {getData(SkillsData, 'tools').data.map((item, index)=>{
                                                 const {imgPath} = item;
                                                 return <div key={index}>
-                                                    <Image src={imgPath} width={48} height={48} alt='' priority />
+                                                    <Image src={imgPath} width={48} height={48} alt='' loading={width < 768 ? "lazy" : "eager"} />
                                                 </div>
                                             })}
                                         </div>
