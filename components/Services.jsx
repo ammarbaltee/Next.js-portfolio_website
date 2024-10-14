@@ -29,9 +29,9 @@ const Services = () => {
             My Services
         </h2>
         <ul className="mt-10 grid gap-20 md:grid-cols-2 lg:grid-cols-3 md:gap-12">
-        {servicesDetail.map((services) => {
+        {servicesDetail.map((services, index) => {
             return (
-                <BackgroundGradient>
+                <BackgroundGradient key={index}>
                     <ServicesItem services={services} />
                 </BackgroundGradient>
             );

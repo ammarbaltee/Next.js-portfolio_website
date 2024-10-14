@@ -12,7 +12,7 @@ const HeroSection = () => {
         fill="white"
         />
         <div className="p-4 md:pt-20 relative z-10 w-full text-center">
-            <h1 className="head_text text-center dark:text-white">Innovative Frontend Solutions
+            <h1 className="head_text text-center max-md:text-[35px] dark:text-white">Innovative Frontend Solutions
             <br className="max-md:hidden" />
             <span className="text-primary text-center dark:#A1A1AA"> for Modern Web </span>
             </h1>
