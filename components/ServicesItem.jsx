@@ -15,7 +15,7 @@ const ServicesItem = ({ services }) => {
             priority
           />
         </div>
-        <h4 className="h4 mt-6 group-hover:text-white">{services.title}</h4>
+        <h3 className="h4 mt-6 group-hover:text-white">{services.title}</h3>
         <p className="text-white text-lg mt-4 group-hover:text-white">{services.description}</p>
       </BackgroundGradient>
     </li>
