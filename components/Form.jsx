@@ -9,6 +9,7 @@ const Form = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [statusMessage, setStatusMessage] = useState('');
+  const [statusColor, setStatusColor] = useState('text-red-500'); // Default to red for errors
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -31,12 +32,15 @@ const Form = () => {
 
       if (response.ok) {
         setStatusMessage('Message sent successfully!');
+        setStatusColor('text-green-500'); // Set to green for success
         setFormData({ name: '', email: '', message: '' });
       } else {
         setStatusMessage('Failed to send message. Please try again.');
+        setStatusColor('text-red-500'); // Set to red for error
       }
     } catch (error) {
       setStatusMessage('An error occurred. Please try again.');
+      setStatusColor('text-red-500');
     } finally {
       setIsSubmitting(false);
     }
@@ -44,7 +48,6 @@ const Form = () => {
 
   return (
     <form onSubmit={handleSubmit} className="flex flex-col gap-y-4">
-      {statusMessage && <div className="text-red-500">{statusMessage}</div>}
       {/* Input for Name */}
       <div className="relative flex items-center">
         <Input
@@ -86,6 +89,8 @@ const Form = () => {
         {isSubmitting ? 'Sending...' : "Let's Talk"}
         <ArrowRightIcon size={20} />
       </Button>
+      {/* Status message, appearing below the button */}
+      {statusMessage && <div className={`${statusColor} mt-2`}>{statusMessage}</div>}
     </form>
   );
 };
