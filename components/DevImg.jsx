@@ -9,6 +9,7 @@ const DevImg = ({containerStyles, ImgSrc}) => {
         src={ImgSrc} 
         width={505}
         height={505}
+        alt='developer image'
         loading={width < 768 ? "lazy" : "eager"}
         decoding="async"
         priority={width >= 768} // Set priority for larger screens 
