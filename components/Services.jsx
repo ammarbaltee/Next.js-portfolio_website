@@ -1,7 +1,6 @@
 'use client'
 
 import ServicesItem from "./ServicesItem";
-import { BackgroundGradient } from "./ui/background-gradient";
 
 const servicesDetail =[
     {
@@ -31,9 +30,7 @@ const Services = () => {
         <ul className="mt-10 grid gap-20 md:grid-cols-2 lg:grid-cols-3 md:gap-12">
         {servicesDetail.map((services, index) => {
             return (
-                <BackgroundGradient key={index}>
-                    <ServicesItem services={services} />
-                </BackgroundGradient>
+                <ServicesItem key={index} services={services} />
             );
         })}
         </ul>
