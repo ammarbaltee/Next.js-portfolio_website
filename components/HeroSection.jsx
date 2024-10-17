@@ -23,13 +23,13 @@ const HeroSection = () => {
             </div>
               {/* Social Links Section */}
             <div className="mt-4 flex gap-6 justify-center">
-                <Link href="https://github.com/ammarbaltee" target="_blank" rel="noopener noreferrer">
+                <Link href="https://github.com/ammarbaltee" target="_blank" rel="noopener noreferrer" aria-label="View my GitHub profile">
                     <FaGithub className="text-3xl text-gray-600 hover:text-gray-800 transition-colors duration-200" />
                 </Link>
-                <Link href="https://www.linkedin.com/in/ammar-yasir-354181106/" target="_blank" rel="noopener noreferrer">
+                <Link href="https://www.linkedin.com/in/ammar-yasir-354181106/" target="_blank" rel="noopener noreferrer" aria-label="Connect on LinkedIn">
                     <FaLinkedin className="text-3xl text-gray-600 hover:text-gray-800 transition-colors duration-200" />
                 </Link>
-                <Link href="https://twitter.com/your-username" target="_blank" rel="noopener noreferrer">
+                <Link href="https://twitter.com/your-username" target="_blank" rel="noopener noreferrer" aria-label="Follow me on Twitter">
                     <FaTwitter className="text-3xl text-gray-600 hover:text-gray-800 transition-colors duration-200" />
                 </Link>
             </div>
